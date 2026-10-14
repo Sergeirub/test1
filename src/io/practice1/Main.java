@@ -1,4 +1,6 @@
-import Task.ReverseLetters;
+package io.practice1;
+
+import io.practice1.utilus.ReverseLetters;
 
 public class Main {
     public static void main(String[] args) {
