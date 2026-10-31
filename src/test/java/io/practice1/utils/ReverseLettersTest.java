@@ -4,6 +4,7 @@ import io.practice1.utilus.ReverseLetters;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ReverseLettersTest {
     @Test
@@ -68,6 +69,11 @@ class ReverseLettersTest {
         String expected = "";
         String actual = ReverseLetters.reverseLetters(input);
         assertEquals(expected, actual);
+    }
+    @Test
+    void shouldThrowExceptionWhenInputIsNull() {
+        assertThrows(NullPointerException.class, () ->
+                ReverseLetters.reverseLetters(null));
     }
 }
 
